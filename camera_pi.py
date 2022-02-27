@@ -20,7 +20,7 @@ class Camera(BaseCamera):
 
             while True:
                   array = camera.capture_array()
-                  buf = simplejpeg.encode_jpeg (array, colorspace='BGRX')
+                  buf = simplejpeg.encode_jpeg (array, colorspace='RGBX')
 
                   output_buffer.seek(0)
                   output_buffer.write(buf)
