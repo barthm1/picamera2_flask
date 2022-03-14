@@ -29,5 +29,9 @@ class Camera(BaseCamera):
 
                   output_buffer.seek(0)
                   output_buffer.truncate()
+            preview.stop()
+            camera.stop()
+
+
 
 
