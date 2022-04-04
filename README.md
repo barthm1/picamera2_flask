@@ -2,5 +2,6 @@
 libcamera interface for flask video streaming (libcamera / GStreamer)
 
 Install https://github.com/raspberrypi/picamera2 and https://github.com/miguelgrinberg/flask-video-streaming
+
 pip3 install simplejpeg
 
