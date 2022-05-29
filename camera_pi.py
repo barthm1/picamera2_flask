@@ -3,7 +3,7 @@
 import io
 import simplejpeg
 import time
-from picamera2.picamera2 import *
+from picamera2 import Picamera2, Preview
 from base_camera import BaseCamera
 
 
