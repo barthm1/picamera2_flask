@@ -11,10 +11,8 @@ class Camera(BaseCamera):
     @staticmethod
     def frames():
             camera = Picamera2()
-            config = camera.preview_configuration(main={"size": (640, 480)})
-            camera.configure(config) 
-            
-            camera.start_preview (Preview.NULL)
+            camera.configure (camera.create_video_configuration(main={"size": (1280, 720)}))
+
             camera.start()
             output_buffer = io.BytesIO()
 
@@ -29,7 +27,6 @@ class Camera(BaseCamera):
 
                   output_buffer.seek(0)
                   output_buffer.truncate()
-            camera.stop_preview(Preview.NULL)
             camera.stop()
 
 
